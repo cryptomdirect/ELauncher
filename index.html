@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8"/>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    	<link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+    	<link rel="stylesheet" href="styles/style.css" media="screen and (width <= 3500px)" id="s1"/>
+		<link rel="stylesheet" href="styles/4k.css" media="screen and (width >= 3500px)" id="s2"/>
+    	<link rel="stylesheet"href="styles/button.css"/>
+    	<title>ELauncher 2.0.0 :</title>
+	</head>
+    <style>
+        option{
+            padding:1em;
+        }
+    </style>
+	<body id="body">
+		<div id="dirt"></div>
+	
+		<div id="select">
+			<p>Play to : <span class="help" onclick="window.location.href='help/index.html#mc_version'">&#x1F6C8;</span></p>
+			<select style="margin-left:1em;"  onchange="versionfunc(this.value)">
+			   		<option value="26.2">26.2 </option>
+                    <option value="1.12.2">1.12.2</option>
+    				<option value="1.8.8">1.8.8</option>
+    				<option value="1.7.3">1.7.3</option>
+    				<option value="1.5.2">1.5.2</option>
+                    <option value="1.3">1.3</option>
+    				<option value="0.4.1">0.4.1</option>
+                    <option value="Indev">Indev</option>
+			</select>
+		</div>
+	
+    	<center id="title">
+        	<img id="mc" src="medias/images/minecraft.jpg" alt="Minecraft logo" onclick="window.location.href='https://www.minecraft.net/fr-fr'">
+        	<h1>ELauncher 2.0.0 (stable) :<sup>LAST VERSION :<br>OCT 8 2026</sup></h1>
+    	</center>
+    	<center>
+        <div id="launch"><br>
+            <legend><h4><p style="border:2px solid;padding:0.5em;weidth:1em;">Play to :</p></h4></legend>
+                <form id="optns">
+                	<input type="radio" id="offline" name="choice" onclick="change(0)" checked/>
+                	<label for="offline" style="cursor:pointer;">Play EglercraftX Online</label><br><br>
+                    <input type="radio" id="mos" name="choice" onclick="change(1)"/>
+                    <label for="mod" style="cursor:pointer;">Play EglercraftX Modpack</label>
+                </form><br>
+            </center>
+            <div id="vimg"></div><br>
+            <center>
+            	<button class="minecraft-btn" onclick="herobrine();" >Launch</button>
+        	</center>
+    	</div>
+    	<footer><br>
+        	<i>Minecraft web : EaglercraftX 26.2</i><br>
+        	<i style="margin-left:2em;">ELauncher : Open-source</i><br>
+        	<i style="margin-left:2em;">EaglercraftX : © <a href="https://eaglercraft.com/" target="_blank">Eaglercraft</a></i><br>
+        	<i style="margin-left:2em;">Minecraft : © <a href="https://www.mojang.com" target="_blank">Mojang Studio</a></i><br><br>
+        	<u id="updti" onclick="updt()"><img src="favicon.png" id="logofooter" alt="logo"></img>Updates informations :</u>
+    	</footer>
+	</body>
+	<script src="scripts/script.js"></script>
+	<script src="scripts/easteregg.js"></script>
+</html>

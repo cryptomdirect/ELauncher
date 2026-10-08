@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Not supported</title>
+	</head>
+	<style>
+		html {
+            font-family: Minecraft;
+            background-image: url("medias/images/backgrounds/stone.png");
+            image-rendering: pixelated;
+            color:#fff;
+            text-shadow: 2px 2px black;
+		}
+
+		#info {
+			border:2px solid white;
+			margin:25%;
+			margin-top:5%;
+            padding:1em;
+		}
+
+		#txt {
+			visibility: visible;
+			position: inherit;
+			font-family: Minecraft;
+		}
+
+		a:hover {
+			color: dodgerblue;
+		}
+
+		img {
+			width: 5em;
+            margin-top:1em;
+		}
+
+        #dirt {
+        	position: fixed;
+        	top: 0;
+        	right: 0;
+        	left: 0;
+        	height: 48px;
+        	background-image: url("medias/images/backgrounds/dirt.png");
+        	image-rendering: pixelated;
+        	visibility: visible;
+        	z-index: -1;
+}
+
+		@font-face {
+			font-family: Minecraft;
+			src: url("medias/fonts/minecraft.ttf");
+		}
+	</style>
+	<body>
+        <div id="dirt"></div>
+		<div id="info">
+			<center><img src="favicon.png" alt=""></img></center>
+			<center id="txt">
+				<h2>Your screen is too narrow. Try resizing this window and click “Try Again.”</h2><br><br>
+                <h3><a href="index.html" onclick="window.close()">Try again</a></h3>
+			</center>
+		</div>
+	</body>
+	<script>
+        if (window.innerWidth >= 920) {
+            window.location.href="index.html";
+        }
+	</script>
+</html>
