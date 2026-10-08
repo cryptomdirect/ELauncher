@@ -1,0 +1,264 @@
+html {
+    font-family: Minecraft;
+    background-image: url("../medias/images/backgrounds/stone.png");
+    image-rendering: pixelated;
+    color:#fff;
+    text-shadow: 2px 2px black;
+}
+
+body {
+    background-image: url("../medias/images/backgrounds/background.png");
+    background-size: 60em;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: 60s linear 0.5s infinite bkgrnd;
+    background-position-y: 5em;
+    height: 35em;
+}
+
+#launch {
+    font-size: large;
+    width:25%;
+}
+
+#mc {
+    height:4em;
+	cursor:pointer;
+    margin-top:0em;
+}
+
+.help {
+	text-shadow: none;
+	cursor: pointer;
+}
+
+.help:hover {
+	color: black;
+}
+
+#radio {
+    margin-left: 40%;
+    margin-right: 40%;
+    cursor: default;
+    font-size: x-large;
+}
+
+i {
+    margin-left: 1em;
+}
+
+footer {
+    background: rgba(128, 128, 128, 0.250);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+	font-size:large;
+}
+
+a {
+	color:blue;
+	text-shadow: none;
+}
+
+a:hover {
+	color: #edef97;
+}
+
+
+input {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid gray;
+    cursor:pointer;
+    background-image: url("../medias/images/buttons/btn.png");
+}
+
+input:hover {
+    background: #999;
+}
+  
+input:checked {
+   background-image: url("../medias/images/buttons/btn-2.png");
+}
+
+label:hover, #download:hover, #updti:hover, #mojang:hover, #eaglercraft:hover {
+	color: #edef97;
+}
+
+sup {
+	color: #ffff00;
+	text-shadow: 3px 3px #404000;
+	font-size: small;
+	position: fixed;
+	margin-left: -5em;
+	rotate: 30deg;
+	animation: 2s linear 0s infinite alternate change;
+	margin-top:-1em;
+}
+
+.logos {
+	font-size:x-large;
+}
+
+#updti {
+	margin-right: 1em;
+	position: fixed;
+	right: 0;
+	margin-top: -6.5em;
+	cursor:help;
+	padding:1em;
+	border:3px solid gray;
+	background-color: #fff9;
+	align-items: center;
+	display: flex;
+}
+
+#logofooter {
+	width:2em;
+	margin-right:0.5em;
+}
+
+.R {color:red;}
+.B {color:dodgerblue;}
+.G {color:#57ff91;}
+.Y {color:yellow;}
+
+#dirt {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 48px;
+	background-image: url("../medias/images/backgrounds/dirt.png");
+	image-rendering: pixelated;
+	visibility: visible;
+	z-index: -1;
+}
+
+#select {
+	position: fixed;
+	left: 0;
+	margin-left: 2.25em;
+	top: 6em;
+	padding: 1em;
+	border: 2px solid gray;
+	background:url('../medias/images/backgrounds/iron.png');
+}
+
+select {
+	border: 2px solid gray;
+	background:url('../medias/images/backgrounds/diamon.png');
+	font-family: Minecraft;
+	cursor: pointer;
+	height: 48px;
+	width: 96px;
+	image-rendering: pixelated;
+    color:#fff;
+    text-shadow: 2px 2px black;
+}
+
+option {
+	border: 2px solid gray;
+	background:url('../medias/images/backgrounds/diamon.png');
+	font-family: Minecraft;
+	cursor: pointer;
+	height: 48px;
+	width: 96px;
+	image-rendering: pixelated;
+    color:#0f0f0f;
+    text-shadow: 2px 2px black;
+}
+
+#vimg {
+    background: url("../medias/images/versions/26.2.webp");
+    background-size:9em;
+    background-position:center;
+	position: fixed;
+	left: 0;
+	margin-left: 2.25em;
+	top: 18em;
+	padding: 1em;
+	border: 2px solid gray;
+    height:10em;
+    width:7em;
+}
+
+@keyframes change {
+	0% {
+		rotate:40deg;
+	}
+	100% {
+		rotate:30deg;
+	}
+}
+
+@keyframes bkgrnd {
+	0% {
+		background-image: url("../medias/images/backgrounds/background.png");
+	}
+	10% {
+		background-image: url("../medias/images/backgrounds/background-2.png");
+	}
+	15% {
+		background-image: url("../medias/images/backgrounds/background-3.jpeg");
+	}
+	20% {
+		background-image: url("../medias/images/backgrounds/background-4.jpeg");
+	}
+	25% {
+		background-image: url("../medias/images/backgrounds/background-5.jpeg");
+	}
+	30% {
+		background-image: url("../medias/images/backgrounds/background-6.jpeg");
+	}
+	35% {
+		background-image: url("../medias/images/backgrounds/background-7.png");
+	}
+	40% {
+		background-image: url("../medias/images/backgrounds/background-8.png");
+	}
+	45% {
+		background-image: url("../medias/images/backgrounds/background-9.jpeg");
+	}
+	50% {
+		background-image: url("../medias/images/backgrounds/background-10.webp");
+	}
+	55% {
+		background-image: url("../medias/images/backgrounds/background-11.jpeg");
+	}
+    60% {
+		background-image: url("../medias/images/backgrounds/background-12.jpeg");
+	}
+	65% {
+		background-image: url("../medias/images/backgrounds/background-13.jpeg");
+	}
+	70% {
+		background-image: url("../medias/images/backgrounds/background-14.png");
+	}
+	75% {
+		background-image: url("../medias/images/backgrounds/background-15.png");
+	}
+	80% {
+		background-image: url("../medias/images/backgrounds/background-16.png");
+	}
+	85% {
+		background-image: url("../medias/images/backgrounds/background-17.png");
+	}
+	90% {
+		background-image: url("../medias/images/backgrounds/background-18.png");
+	}
+    95% {
+		background-image: url("../medias/images/backgrounds/background-19.jpeg");
+	}
+	100% {
+		background-image: url("../medias/images/backgrounds/background-20.jpeg");
+	}
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url("../medias/fonts/minecraft.ttf");
+}

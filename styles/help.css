@@ -1,0 +1,107 @@
+html {
+    font-family: Minecraft;
+    background-image: url("../medias/images/backgrounds/stone.png");
+    image-rendering: pixelated;
+    color:#fff;
+    text-shadow: 2px 2px black;
+}
+
+body {
+    background-image: url("../medias/images/backgrounds/background.png");
+    background-size: 60em;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: 60s linear 0.5s infinite bkgrnd;
+    height: 35em;
+}
+
+#text {
+    margin-top:50vh;
+}
+
+.link {
+	visibility: hidden;
+}
+
+.actual {
+	border: 2px solid white;
+	margin-left: 25%;
+	margin-right: 25%;
+	border-radius: 1em;
+	padding: 1em;
+	text-align: center;
+}
+
+#back {
+    cursor:pointer;
+    position:fixed;
+    top:-1em;
+}
+
+@keyframes bkgrnd {
+	0% {
+		background-image: url("../medias/images/backgrounds/background.png");
+	}
+	10% {
+		background-image: url("../medias/images/backgrounds/background-2.png");
+	}
+	15% {
+		background-image: url("../medias/images/backgrounds/background-3.jpeg");
+	}
+	20% {
+		background-image: url("../medias/images/backgrounds/background-4.jpeg");
+	}
+	25% {
+		background-image: url("../medias/images/backgrounds/background-5.jpeg");
+	}
+	30% {
+		background-image: url("../medias/images/backgrounds/background-6.jpeg");
+	}
+	35% {
+		background-image: url("../medias/images/backgrounds/background-7.png");
+	}
+	40% {
+		background-image: url("../medias/images/backgrounds/background-8.png");
+	}
+	45% {
+		background-image: url("../medias/images/backgrounds/background-9.jpeg");
+	}
+	50% {
+		background-image: url("../medias/images/backgrounds/background-10.webp");
+	}
+	55% {
+		background-image: url("../medias/images/backgrounds/background-11.jpeg");
+	}
+    60% {
+		background-image: url("../medias/images/backgrounds/background-12.jpeg");
+	}
+	65% {
+		background-image: url("../medias/images/backgrounds/background-13.jpeg");
+	}
+	70% {
+		background-image: url("../medias/images/backgrounds/background-14.png");
+	}
+	75% {
+		background-image: url("../medias/images/backgrounds/background-15.png");
+	}
+	80% {
+		background-image: url("../medias/images/backgrounds/background-16.png");
+	}
+	85% {
+		background-image: url("../medias/images/backgrounds/background-17.png");
+	}
+	90% {
+		background-image: url("../medias/images/backgrounds/background-18.png");
+	}
+    95% {
+		background-image: url("../medias/images/backgrounds/background-19.jpeg");
+	}
+	100% {
+		background-image: url("../medias/images/backgrounds/background-20.jpeg");
+	}
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url("../medias/fonts/minecraft.ttf");
+}

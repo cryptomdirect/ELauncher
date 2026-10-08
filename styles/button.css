@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Minecraft;
+    src: url("../medias/fonts/minecraft.ttf");
+}
+
+.minecraft-btn {
+	background-image: url("../medias/images/buttons/btn.png");
+	font-family: 'Minecraft';
+	border-color: #AAA #565656 #565656 #AAA;
+	border-width: 4px;
+	text-shadow: 3px 3px #4C4C4C;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 2em;
+	font-size: x-large;
+	height:2em;
+	width:7em;
+	cursor:pointer;
+}
+  
+.minecraft-btn:hover {
+	background-image: url("../medias/images/buttons/btn-2.png");
+  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
+  	color: #edef97;
+}
