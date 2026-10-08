@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="UTF-8">
+        <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<title>Redirect</title>
+	</head>
+	<style>
+		html {
+            font-family: Minecraft;
+            background-image: url("../medias/images/backgrounds/stone.png");
+            image-rendering: pixelated;
+            color:#fff;
+            text-shadow: 2px 2px black;
+		}
+
+		#credirect {
+			border:2px solid white;
+			margin:25%;
+			margin-top:5%;
+		}
+
+		#redirect {
+			visibility: visible;
+			position: inherit;
+			font-family: Minecraft;
+		}
+
+		a:hover {
+			color: dodgerblue;
+		}
+
+		img {
+			width: 5em;
+		}
+
+        #dirt {
+        	position: fixed;
+        	top: 0;
+        	right: 0;
+        	left: 0;
+        	height: 48px;
+        	background-image: url("../medias/images/backgrounds/dirt.png");
+        	image-rendering: pixelated;
+        	visibility: visible;
+        	z-index: -1;
+}
+
+		@font-face {
+			font-family: Minecraft;
+			src: url("../medias/fonts/minecraft.ttf");
+		}
+	</style>
+	<body>
+        <div id="dirt"></div>
+		<div id="redirect">
+			<center><img src="../medias/images/loader.svg" alt=""></img></center>
+			<center id="credirect">
+				<h1>Redirection...</h1>
+				<h2><a href="../index.html" onclick="window.close()">Stop</a></h2>
+			</center>
+		</div>
+	</body>
+	<script>
+		var currentURL = document.URL;
+		
+        const url = currentURL;
+        const baseUrl = 'index.html?';
+
+        const newUrl = url.replace(baseUrl, '');
+        setTimeout("window.location.href=newUrl;",1000);
+	</script>
+</html>
